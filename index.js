@@ -87,7 +87,7 @@ class HomeApp extends React.Component {
     }
     return (
       <NavigationContainer>
-        <Tab.Navigator tabBarOptions={{
+        <Tab.Navigator screenOptions={{ headerShown: false }} tabBarOptions={{
             activeTintColor: color.greenHeader,
           }}>
           <Tab.Screen options={TabOption('Plantas', 'plant')} name="Plantas" component={HomeStackScreen} />
