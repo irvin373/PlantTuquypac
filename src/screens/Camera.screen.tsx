@@ -125,7 +125,7 @@ export default class Home extends React.Component<Props, State> {
         const {navigation} = this.props;
         const result = res[0];
         this.setState({label: JSON.stringify(res)})
-        if (result.confidence > 0.7) {
+        if (result.confidence > 0.8) {
           const labelKey:labelKeys = result.label;
           const index = mapedLabels[labelKey];
           navigation.navigate('Plantas');
