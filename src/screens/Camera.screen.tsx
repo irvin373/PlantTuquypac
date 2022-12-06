@@ -181,10 +181,12 @@ export default class Home extends React.Component<Props, State> {
     return (
       <View style={{flex: 1}}>
         <ScrollView style={{flex: 1, alignSelf: 'center', marginTop: 20}}>
-          <Text style={{flex: 1, fontSize: 16, marginHorizontal: 12}}>
+          <Text style={{flex: 1, fontSize: 16, marginHorizontal: 12, textAlign: 'center'}}>
             {`Seleccione una imagen, mediante camara o la galeria para el reconocimiento`}
           </Text>
-          <Image resizeMethod={'resize'} style={{height: 250, width: 250, marginTop: 20}} source={this.state.imgSrc} />
+          <View style={{alignItems: 'center'}}>
+            <Image resizeMethod={'resize'} style={{height: 250, width: 250, marginTop: 20}} source={this.state.imgSrc} />
+          </View>
           <Text style={{flex: 1, fontSize: 18, marginBottom: 10}}> {this.state.label} </Text>
           <Text style={{flex: 1, fontSize: 18, marginBottom: 10}}> {this.state.newLabel} </Text>
         </ScrollView>
