@@ -67,10 +67,12 @@ export default function PlantDetails({ navigation, route }: Props) {
         <RecipeCard data={item} medicalGroup={plant?.MedicalName as string}
           openDetail={() => {
             navigation.popToTop();
-            navigation.navigate('Recetas');
-            navigation.push('RecipeDetails', {
-              recipeId: item.recipeId
-            });
+            navigation.navigate('RecetasTab');
+            setTimeout(() => {
+              navigation.push('RecipeDetails', {
+                recipeId: item.recipeId
+              });
+            }, 0);
           }}
         />
       </View>)}

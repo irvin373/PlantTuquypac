@@ -8,6 +8,7 @@ import TQImage from './src/components/TQImage';
 import DataBase from './src/utils/DataBase';
 import Camera from './src/screens/Camera.screen';
 import PlantScreen from './src/screens/Plants.screen';
+import IntroductionModal from './src/screens/Introduction.modal';
 import PlantDetail from './src/screens/PlantDetail.screen';
 import RecipeDetail from './src/screens/RecipeDetail.screen';
 import RecipeScreen from './src/screens/Recipes.screen';
@@ -31,6 +32,7 @@ function HomeStackScreen() {
     <HomeStack.Navigator>
       <HomeStack.Screen options={headerStyle} name="Plantas" component={PlantScreen} />
       <HomeStack.Screen options={headerStyle} name="PlantDetail" component={PlantDetail} />
+      <HomeStack.Screen options={{headerShown: false, presentation: 'modal'}} name="Introduccion" component={IntroductionModal} />
     </HomeStack.Navigator>
   );
 }
@@ -87,13 +89,11 @@ class HomeApp extends React.Component {
     }
     return (
       <NavigationContainer>
-        <Tab.Navigator screenOptions={{ headerShown: false }} tabBarOptions={{
-            activeTintColor: color.greenHeader,
-          }}>
-          <Tab.Screen options={TabOption('Plantas', 'plant')} name="Plantas" component={HomeStackScreen} />
-          <Tab.Screen options={TabOption('Camara', 'camara')} name="Camara" component={CameraStackScreen} />
-          <Tab.Screen options={TabOption('Recetas', 'tea')} name="Recetas" component={SettingsStackScreen} />
-          <Tab.Screen options={TabOption('Informacion', 'plant')} name="Informacion" component={InformationStackScreen} />
+        <Tab.Navigator screenOptions={{ headerShown: false, tabBarActiveTintColor: color.greenHeader }}>
+          <Tab.Screen options={TabOption('Plantas', 'plant')} name="PlantasTab" component={HomeStackScreen} />
+          <Tab.Screen options={TabOption('Camara', 'camara')} name="CamaraTab" component={CameraStackScreen} />
+          <Tab.Screen options={TabOption('Recetas', 'tea')} name="RecetasTab" component={SettingsStackScreen} />
+          <Tab.Screen options={TabOption('Informacion', 'plant')} name="InformacionTab" component={InformationStackScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     );

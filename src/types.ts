@@ -14,3 +14,7 @@ export type RecipeType = {
   imageName: ImageName,
   preparation: string
 };
+
+export type DisplayIntroType = {
+  display: boolean
+} | null

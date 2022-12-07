@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
-import styles, {markdonwStyles} from '../utils/styles';
+import {markdonwStyles} from '../utils/styles';
 import color from '../utils/color';
 import Markdown from 'react-native-markdown-display';
 
@@ -39,7 +39,7 @@ Sabemos que, solo tomar plantas medicinales no resolverán de ninguna manera tod
 > capramen@hotmail.com
 > Telefono: 4291278 CBBA`;
 
-export default function PlantDetails({ navigation, route }: Props) {
+export default function InformationScreen({ navigation, route }: Props) {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: color.white }}>
       <View style={{padding: 16, borderBottomColor: color.cardBorder, borderBottomWidth: 1}}>

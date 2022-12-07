@@ -59,10 +59,12 @@ export default function PlantDetails({ navigation, route }: Props) {
         <PlantCard data={item} medicalGroup={item.MedicalName as string}
           openDetail={() => {
             navigation.popToTop();
-            navigation.navigate('Plantas');
-            navigation.push('PlantDetail', {
-              plantId: item.id
-            });
+            navigation.navigate('PlantasTab');
+            setTimeout(() => {
+              navigation.push('PlantDetail', {
+                plantId: item.id
+              });
+            }, 0);
           }} />
       </View>)}
     </ScrollView>

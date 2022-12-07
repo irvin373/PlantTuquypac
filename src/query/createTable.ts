@@ -113,7 +113,7 @@ VALUES (1,'La Muña Andina','**PROPIEDADES**
 - infecciones vaginales: vulvovaginitis, vulvitis, vaginitis o flujo vaginal (candidiasis)
 
 **PARTES QUE SE USAN:** Flores, hojas, tallos',4,'hierbabuena.jpg'),
-(7,'planta de palta','**PROPIEDADES**
+(7,'Planta de palta','**PROPIEDADES**
 - Antioxidante
 - Inmunoestimulante
 - nutritivo
@@ -127,7 +127,7 @@ VALUES (1,'La Muña Andina','**PROPIEDADES**
 - el aceite mejora la piel
 
 **PARTES QUE SE USAN:** hojas, corteza, pulpa de la fruta, semilla.',4,'palta.jpg'),
-(8,'lavanda','**PROPIEDADES**
+(8,'Lavanda','**PROPIEDADES**
 - Analgésico
 - Sedante
 - Antiséptico
@@ -137,7 +137,7 @@ VALUES (1,'La Muña Andina','**PROPIEDADES**
 - Relajante
 
 **PARTES QUE SE USAN:** flor, hojas',4,'lavanda.jpg'),
-(9,'mandarina','**PROPIEDADES**
+(9,'Mandarina','**PROPIEDADES**
 - Anti estrés
 - afecciones del sistema circulatorio y de hipertensión Asma, actúa como broncodilatador
 - indicada para casos de ansiedad, taquicardia, depresión,
@@ -146,7 +146,7 @@ VALUES (1,'La Muña Andina','**PROPIEDADES**
 - nervios y sudoración.
 
 **PARTES QUE SE USAN:** jugo, pulpa, cascara, flores, hojas, semillas',4,'mandarina.jpg'),
-(10,'diente de leon','**PROPIEDADES**
+(10,'Diente de leon','**PROPIEDADES**
 - Protector hepático
 - Depurativo de la sangre
 - Mantiene correcto funcionamiento del hígado
@@ -158,7 +158,7 @@ VALUES (1,'La Muña Andina','**PROPIEDADES**
 - Sustituto del café
 
 **PARTES QUE SE USAN:** Flores, hojas, raíz.',4,'dienteleon.jpg'),
-(11,'ortiga','**PROPIEDADES**
+(11,'Ortiga','**PROPIEDADES**
 - Protector hepático, inmunomodulador
 - hipoglucemiante,
 - Digestiva

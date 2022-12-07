@@ -128,8 +128,10 @@ export default class Home extends React.Component<Props, State> {
         if (result.confidence > 0.8) {
           const labelKey:labelKeys = result.label;
           const index = mapedLabels[labelKey];
-          navigation.navigate('Plantas');
-          navigation.push('PlantDetail', {plantId: index});
+          navigation.navigate('PlantasTab');
+          setTimeout(() => {
+            navigation.push('PlantDetail', {plantId: index});
+          }, 0);
         } else {
           Alert.alert('Sin Coincidencia', 'La planta no esta dentro del sistema tuquypac');
         }
