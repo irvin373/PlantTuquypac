@@ -31,7 +31,7 @@ export default StyleSheet.create({
     borderColor: color.cardBorder,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 12,
+    padding: 8,
     marginHorizontal: 12,
   }
 });

@@ -50,7 +50,7 @@ export default class Home extends React.Component<Props, State> {
     label: '',
     newLabel: '',
     path: '',
-    imgSrc: require('../../assets/img/mate.jpg'),
+    imgSrc: require('../../assets/img/camaraManzanilla.png'),
   }
 
   componentDidMount() {
@@ -125,7 +125,7 @@ export default class Home extends React.Component<Props, State> {
         const {navigation} = this.props;
         const result = res[0];
         this.setState({label: JSON.stringify(res)})
-        if (result.confidence > 0.8) {
+        if (result.confidence > 0.85) {
           const labelKey:labelKeys = result.label;
           const index = mapedLabels[labelKey];
           navigation.navigate('PlantasTab');
@@ -182,9 +182,12 @@ export default class Home extends React.Component<Props, State> {
   render() {
     return (
       <View style={{flex: 1}}>
-        <ScrollView style={{flex: 1, alignSelf: 'center', marginTop: 20}}>
-          <Text style={{flex: 1, fontSize: 16, marginHorizontal: 12, textAlign: 'center'}}>
-            {`Seleccione una imagen, mediante camara o la galeria para el reconocimiento`}
+        <ScrollView style={{flex: 1, alignSelf: 'center', marginTop: 20, marginHorizontal: 12}}>
+          <Text style={{flex: 1, fontSize: 16, textAlign: 'center'}}>
+            {`Seleccione una imagen, mediante camara o la galeria para el reconocimiento.`}
+          </Text>
+          <Text style={{flex: 1, fontSize: 16, textAlign: 'center', marginTop: 8}}>
+            {`Se recomienda enfocar la imagen con la planta para el reconocimiento.`}
           </Text>
           <View style={{alignItems: 'center'}}>
             <Image resizeMethod={'resize'} style={{height: 250, width: 250, marginTop: 20}} source={this.state.imgSrc} />
