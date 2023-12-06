@@ -56,7 +56,7 @@ VALUES (1,'La Muña Andina','**PROPIEDADES**
 - cardiopatias de tipo nervioso
 - Carminativa
 - resfriados y gripe
-- herpes labial (herpes simplex Antiemético
+- herpes labial (herpes simplex Antiemético)
 - Antiséptica
 - Digestiva
 - Espasmos uterinos
@@ -195,7 +195,7 @@ Las inflamaciones se pueden dividir en 2 tipos: internas y externas.
 
 Las inflamaciones internas no son fáciles de percibir pero con ayuda del laboratorio u otra forma de diagnóstico se puede ubicar y asegurar el danio.
 
-**Uso Interno**
+**USO INTERNO**
 La inflamación externa en el cuerpo siempre presenta cuatro síntomas típicos: Enrojecimiento, Hinchazón, Sensibilidad al dolor, Calor
 
 Para un litro de agua hervida agregar:
